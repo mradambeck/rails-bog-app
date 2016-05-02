@@ -7,8 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class = "container">
+    <div class = "col-sm-8 col-sm-offset-2 col-xs-offset-1">
+      <div class="row">
+        <h1>The Bog Blog</h1>
+        <h3><em>repetitive blog building since 2016</em></h3>
+      </div>
+      <%= yield %>
 
-<%= yield %>
-
+    </div>
+  </div>
 </body>
 </html>

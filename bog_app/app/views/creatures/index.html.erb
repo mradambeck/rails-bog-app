@@ -1,0 +1,13 @@
+<div class = "row">
+
+  <% @creatures.each do |creature| %>
+    <div class = "row">
+      <div class = "col-xs-offset-1">
+        <h4><%= creature.name %></h4>
+        <p><em><%= creature.description %></em></p>
+        <hr />
+      </div>
+    </div>
+  <% end %>
+
+</div>
