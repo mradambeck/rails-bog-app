@@ -3079,3 +3079,9 @@ LoadError (cannot load such file -- /Users/adambeck/wdi/rails-bog-app/bog_app/co
   Rendered /Users/adambeck/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
   Rendered /Users/adambeck/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (211.0ms)
   Rendered /Users/adambeck/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (268.1ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 19:47:48 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/adambeck/.rvm/gems/ruby-2.3.0@global/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 152ms (Views: 110.1ms | ActiveRecord: 0.0ms)
