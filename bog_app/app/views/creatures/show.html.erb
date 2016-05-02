@@ -7,3 +7,7 @@
 <div class = "row">
   <em><%= @creature.description %></em>
 </div>
+<div class = "row">
+  <%= link_to "Edit this creature", edit_creature_path(@creature) %> -
+  <%= link_to "Go back to the Bog", creatures_path %>
+</div>

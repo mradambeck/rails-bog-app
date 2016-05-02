@@ -1,0 +1,17 @@
+<h2>Edit this creature, you must.</h2>
+  <div class = "form-group">
+  <%= form_for @creature do |f| %>
+  <div class = "row">
+    <label for="name-input">Name</label>
+    <%= f.text_field :name, :class => "form-control", :id => "name-input" %>
+  </div>
+  <div class = "row">
+    <label for="description-input">Description</label>
+    <%= f.text_area :description, :class => "form-control", :id => "description-input"%>
+  </div>
+  <div class = "row">
+    <br />
+    <%= f.submit "Save Creature", :class => "btn btn-success" %>
+  </div>
+  <% end %>
+</div>
