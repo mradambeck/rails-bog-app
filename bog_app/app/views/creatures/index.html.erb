@@ -2,7 +2,7 @@
 <% @creatures.each do |creature| %>
   <div class = "row">
     <div class = "col-xs-offset-1">
-      <h4><%= link_to creature.name, show_creature_path(creature)%></h4>
+      <h4><%= link_to creature.name, creature_path(creature)%></h4>
       <p><em><%= creature.description %></em></p>
       <hr />
     </div>

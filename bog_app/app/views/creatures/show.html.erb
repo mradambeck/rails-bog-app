@@ -6,7 +6,12 @@
   </div>
   <div class = "row">
     <div class = "col-xs-offset-1">
-      <button class = "btn btn-warning">Edit</button>
+      <div class = "col-xs-2">
+        <%= button_to "Edit", edit_creature_path(@creature), method: "get", class: "btn btn-warning" %>
+      </div>
+      <div class = "col-xs-2">
+        <%= button_to "Delete", @creature, method: "delete", class: "btn btn-danger" %>
+      </div>
     </div>
   </div>
 </div>
