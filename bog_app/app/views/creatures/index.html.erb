@@ -1,13 +1,12 @@
-<div class = "col-sm-8 col-sm-offset-2 col-xs-offset-1">
-  <div class= "row">
-    <h1>The Bog Blog</h1>
-    <h4><em>Keeping you informed on everything bog-related since 2016</em></h4>
-  </div>
-  <div class = "row">
-    <ul>
-    <% @creatures.each do |creature| %>
-      <li><strong><%= creature.name %> ::</strong> <em><%= creature.description %></em>
-    <% end %>
-    </ul>
-  </div>
+<div class= "row">
+  <h1>The Bog Blog</h1>
+  <h4><em>Keeping you informed on everything bog-related since 2016</em></h4>
+</div>
+<div class = "row">
+  <ul>
+  <% @creatures.each do |creature| %>
+    <li><strong><%= link_to creature.name, creature_path(creature)%> ::</strong>
+      <em><%= creature.description %></em></li>
+  <% end %>
+  </ul>
 </div>

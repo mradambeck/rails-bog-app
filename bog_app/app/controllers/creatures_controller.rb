@@ -4,4 +4,26 @@ class CreaturesController < ApplicationController
     render :index
   end
 
+  def new
+    @creature = Creature.new
+    render :new
+  end
+
+  def create
+    creature = Creature.new(creature_params)
+    if creature.save
+      redirect_to creatures_path
+    end
+  end
+
+  def show
+    @creature = Creature.find_by_id(params[:id])
+  end
+
+  private
+
+  def creature_params
+    params.require(:creature).permit(:name, :description)
+  end
+
 end
